@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+
+*{
+    font-family: 'Roboto Slab', serif;
+}
+
+.nav{
+    background-color: rgb(56, 54, 54);
+}
+
+.nav .collapse ul li a:hover{
+    color: rgb(197, 54, 54);
+}
+
+nav .collapse ul li .nav-link{
+    color: gainsboro;
+    font-size: 15px;
+}
+
+header .download a{
+    color: rgb(207, 51, 51);
+    transition: all 0.3s ease-in-out;
+    color: white;
+}
+
+header .download a{
+    color: rgb(207, 51, 51);
+}
+
+header .download a:hover{
+    background-color: rgb(211, 70, 70);
+    color: white;
+}
+
+
+header .flex-caption h2{
+    background: rgba(218, 68, 83, 0.7);
+    font-weight: 400;
+    font-size: 24px;
+    max-width: 640px;
+    display: inline-block;
+    padding: 12px 20px;
+    margin-bottom: 0;
+    color: #fff;
+}
+
+.flex-caption .expert{
+    background: rgb(59, 59, 59);
+    background: rgba(59, 59, 59, 0.8);
+    display: block;
+    color: #ddd;
+    max-width: 600px;
+    padding: 12px 20px;
+}
+
+.flex-caption{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 200px;
+        z-index: 1;
+        padding: 0 20px;
+        display: inline-block;
+        max-width: 1170px;
+        margin: auto;
+}
+
+.card-body a{
+    float: right;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    margin-right: 30px;
+}
+
+.card img:hover{
+    opacity: 70%;
+}
+
+.card img{
+    transition: all 0.3s ease-in-out ;
+}
+
+.blog .row .aside-post{
+    height: 650px;
+}
+
+
+.d-flex li a svg{
+    background-color: rgb(56, 56, 56);
+} 
+
+
+.m-3 li a svg{
+    background-color: gainsboro;
+}
+
+.d-flex li a .s1:hover{
+    background-color: rgb(62, 158, 236);
+} 
+
+.d-flex li a .s1{
+    transition: all 0.3s ease-in-out;
+}
+
+.d-flex li a .s2:hover{
+    background-color: rgb(27, 73, 158);
+} 
+
+.d-flex li a .s2{
+    transition: all 0.3s ease-in-out;
+}
+
+.d-flex li a .s3:hover{
+    background-color: rgb(194, 49, 49);
+} 
+
+.d-flex li a .s3{
+    transition: all 0.3s ease-in-out;
+}
+
+.d-flex li a .s4:hover{
+    background-color: rgb(64, 168, 60);
+} 
+
+.d-flex li a .s4{
+    transition: all 0.3s ease-in-out;
+}
+
+.d-flex li a .s5:hover{
+    background-color: rgb(38, 114, 175);
+} 
+
+.d-flex li a .s5{
+    transition: all 0.3s ease-in-out;
+}
+
+.post-aside .post .content a{
+    color: rgb(214, 51, 51);
+    transition: all 0.3s ease-in-out;
+}
+
+.post-aside .post .content a:hover{
+    color: gray;
+}
+
+.card .card-body h5:hover{
+    color: rgb(214, 51, 51);
+}
+.card .card-body h5{
+    transition: all 0.2s ease-in-out;
+}
+
+.card .card-body a{
+    background-color: rgb(211, 70, 70);
+    transition: all 0.3s ease-in-out;
+}
+
+.card .card-body a:hover {
+    color: red;
+}
+
+.card .card-body a:hover{
+    background-color: rgb(56, 54, 54);
+}
+
+.col-lg-7 .older{
+    color: rgb(243, 243, 243);
+    background-color: rgb(43, 38, 38);
+    transition: all 0.3s ease-in-out;
+}
+
+.col-lg-7 .older:hover{
+    background-color: rgb(211, 70, 70);
+    
+}
+
+@media (max-width: 996px) {
+    .flex-caption{
+        display: none;
+    }
+}
+
+
+@media (max-width: 1400px) {
+    .blog .row .aside-post{
+        height: 100%;
+    }
+}
