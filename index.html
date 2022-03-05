@@ -13,6 +13,10 @@
     <div class="nav sticky-top" >
       <nav class="navbar navbar-expand-lg text-secondary container">
         <div class="container-fluid">
+          <label class="switch">
+            <input type="checkbox" onclick="dark()">
+            <span class="slider round"></span>
+          </label>
           <a class="navbar-brand text-light" style="font-size: 20px;" href="#"><strong>Sparkling</strong></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -42,9 +46,13 @@
                 </ul>
               </li>
               <li class="nav-item d-flex ms-3 fs-6">
-                <a class="nav-link" href="#"><svg class="me-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-fill" viewBox="0 0 16 16">
-                  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-                </svg>SHOP</a>
+                  <div id="box">
+                    <button class="button" onclick="search()" id="search">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                      </svg>
+                    </button>
+                  </div>
               </li>
             </ul>
           </div>
@@ -55,7 +63,7 @@
     <!-- header -->
 
     <header>
-     <div class="img-header">
+     <div class="img-header" id="header">
           <div class="head">
             <div class="img">
               <img src="img/header/city-landscape-slider.jpg" alt="" class="img-fluid">
@@ -69,19 +77,19 @@
           </div>
           <div class="container">
             <div class="row p-5 d-flex justify-content-center align-items-center">
-              <div class="col-md-8 fs-4 text-danger">Do you like this awesome and completely free WordPress theme?</div>
-              <div class="col-md-4 download"><a href="" class=" text-decoration-none fs-5  border border-danger p-3 border-1 rounded-2">Download Now!</a></div>
+              <div class="col-md-8 fs-4" style="color: rgb(197, 54, 54);" id="text-color">Do you like this awesome and completely free WordPress theme?</div>
+              <div class="col-md-4 download"><a href="" class=" text-decoration-none fs-5" id="text-color">Download Now!</a></div>
             </div>
           </div>
      </div>
     </header>
     <!-- blog -->
-    <section>
-      <div class="blog" style="background-color: rgb(235, 234, 233);">
+    <section> 
+      <div class="blog" id="blog">
         <div class="container">
         <div class="row justify-content-center gx-5">
-          <div class="col-lg-7 mt-5">
-            <div class="card mb-5">
+          <div class="col-lg-7 mt-5" id="post">
+            <div class="card mb-5 posts" >
               <img src="img/posts/city-landscape-slider.jpg" class="card-img-top" alt="...">
               <div class="card-body p-5">
                 <h5 class="card-title mb-4 fs-4"><strong>Sticky Post – Always Displayed On Top</strong></h5>
@@ -95,7 +103,7 @@
                 <a href="" class="text-white px-2 py-2 border-2 text-decoration-none rounded-1">Read More</a>
               </div>
             </div>
-            <div class="card mb-5">
+            <div class="card mb-5 posts">
               <img src="img/posts/city-landscape-slider-750x410.jpg" class="card-img-top" alt="...">
               <div class="card-body p-5">
                 <h5 class="card-title mb-4 fs-4"><strong>How to Use WordPress Pingbacks And Trackbacks</strong></h5>
@@ -109,7 +117,7 @@
                 <a href="" class="text-white px-2 py-2 border-2 text-decoration-none rounded-1">Read More</a>
               </div>
             </div>
-            <div class="card mb-5">
+            <div class="card mb-5 posts">
               <img src="img/posts/slider-wallpaper-colorlib-750x410.webp" class="card-img-top" alt="...">
               <div class="card-body p-5">
                 <h5 class="card-title mb-4 fs-4"><strong>We Created This Awesome Free WordPress Theme To Set New Industry Standard</strong></h5>
@@ -123,7 +131,7 @@
                 <a href="" class="text-white px-2 py-2 border-2 text-decoration-none rounded-1">Read More</a>
               </div>
             </div>
-            <div class="card mb-5">
+            <div class="card mb-5 posts">
               <img src="img/posts/slider-image-blurry-750x410.jpg" class="card-img-top" alt="...">
               <div class="card-body p-5">
                 <h5 class="card-title mb-4 fs-4"><strong>Post Format: WordPress Tiled Gallery</strong></h5>
@@ -137,7 +145,7 @@
                 <a href="" class="text-white px-2 py-2 border-2 text-decoration-none rounded-1">Read More</a>
               </div>
             </div>
-            <div class="card mb-5">
+            <div class="card mb-5 posts">
               <img src="img/posts/vine-logo-750x410.webp" class="card-img-top" alt="...">
               <div class="card-body p-5">
                 <h5 class="card-title mb-4 fs-4"><strong>witter Embeds – We Used Colorlib Twitter Account For This Demo</strong></h5>
@@ -151,7 +159,7 @@
                 <a href="" class="text-white px-2 py-2 border-2 text-decoration-none rounded-1">Read More</a>
               </div>
             </div>
-            <div class="card mb-5">
+            <div class="card mb-5 posts">
               <img src="img/posts/instagram_logo_new-750x410.jpg" class="card-img-top" alt="...">
               <div class="card-body p-5">
                 <h5 class="card-title mb-4 fs-4"><strong>Another Featured Image Template With a Beautiful Instagram Logo</strong></h5>
@@ -167,7 +175,7 @@
             </div>
             <a class="older text-decoration-none d-flex justify-content-center mb-5 p-1" href="" style="font-size: 14px;">OLDER POSTS</a>
           </div>
-          <div class="aside-post col-lg-4 bg-light mt-5 sticky-top mb-5" style="top: 60px; z-index: 1 ;">
+          <div class="aside-post col-lg-4  mt-5 sticky-top mb-5" id="aside-blog" style="top: 60px; z-index: 1 ;">
             <h6 class="ps-3 pt-4"><strong>FOLLOW US</strong></h6>
               <ul class="d-flex m-3 list-unstyled">
                 <li class="p-1">

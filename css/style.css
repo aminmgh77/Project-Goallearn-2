@@ -8,6 +8,89 @@
     background-color: rgb(56, 54, 54);
 }
 
+.dark{
+    background-color: #333;
+    color: #ddd;
+}
+
+.dark-aside{
+    background-color: #333;
+    height: 650px;
+    color: #ddd;
+}
+
+.dark-lighter{
+    background-color: rgb(77, 77, 77);
+    color: #ddd;
+}
+
+/* toggle switch */
+
+/* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin-right: 20px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #535353;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #535353;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+/*  */
 .nav .collapse ul li a:hover{
     color: rgb(197, 54, 54);
 }
@@ -21,6 +104,9 @@ header .download a{
     color: rgb(207, 51, 51);
     transition: all 0.3s ease-in-out;
     color: white;
+    border: 1px solid ;
+    border-radius: 5px;
+    padding: 20px;
 }
 
 header .download a{
@@ -44,6 +130,10 @@ header .flex-caption h2{
     color: #fff;
 }
 
+.blog{
+    background-color: rgb(235, 234, 233);
+}
+
 .flex-caption .expert{
     background: rgb(59, 59, 59);
     background: rgba(59, 59, 59, 0.8);
@@ -65,6 +155,10 @@ header .flex-caption h2{
         margin: auto;
 }
 
+.aside-post{
+    background-color: rgb(248, 248, 248);
+}
+
 .card-body a{
     float: right;
     margin-top: 20px;
@@ -80,7 +174,7 @@ header .flex-caption h2{
     transition: all 0.3s ease-in-out ;
 }
 
-.blog .row .aside-post{
+.aside-post{
     height: 650px;
 }
 
@@ -185,4 +279,10 @@ header .flex-caption h2{
     .blog .row .aside-post{
         height: 100%;
     }
+}
+
+.button{
+    background-color:rgb(56, 54, 54) ;
+    color: #ddd;
+    border: none;
 }
