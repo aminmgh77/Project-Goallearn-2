@@ -62,4 +62,72 @@ function dark() {
 
     
 }
+let scroll = document.querySelector("button.scroll")
 
+
+window.addEventListener("scroll", e =>{
+    if (window.scrollY > 1500) {
+        scroll.classList.add("show")
+    }else {
+        scroll.classList.remove("show")
+    }
+})
+
+
+scroll.addEventListener("click", e =>{
+    if (scroll.classList.contains("show")) {
+        window.scrollTo({top: 0, behavior: "smooth"})
+    }
+    
+})
+
+
+function show1() {
+    let card = document.getElementById("card-body");
+    let cardMain = document.getElementById("card-main");
+    let text = document.getElementById("text");
+
+    card.classList.remove("fade-tex");
+    cardMain.classList.toggle("div1");
+    cardMain.classList.toggle("card-main");
+}
+
+function show2() {
+    let card = document.getElementById("card-body");
+    let cardMain = document.getElementById("card-main2");
+    let text = document.getElementById("text");
+
+    card.classList.remove("fade-tex");
+    cardMain.classList.toggle("div1");
+    cardMain.classList.toggle("card-main");
+}
+
+function show3() {
+    let card = document.getElementById("card-body");
+    let cardMain = document.getElementById("card-main3");
+    let text = document.getElementById("text");
+
+    card.classList.remove("fade-tex");
+    cardMain.classList.toggle("div1");
+    cardMain.classList.toggle("card-main");
+}
+
+function show4() {
+    let card = document.getElementById("card-body");
+    let cardMain = document.getElementById("card-main4");
+    let text = document.getElementById("text");
+
+    card.classList.remove("fade-tex");
+    cardMain.classList.toggle("div1");
+    cardMain.classList.toggle("card-main");
+}
+
+function show5() {
+    let card = document.getElementById("card-body");
+    let cardMain = document.getElementById("card-main5");
+    let text = document.getElementById("text");
+
+    card.classList.remove("fade-tex");
+    cardMain.classList.toggle("div1");
+    cardMain.classList.toggle("card-main");
+}
